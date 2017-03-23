@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form name = "superCalculadora">
+    <table border="10" cellpadding="2" cellspacing="10" height="100" width="50"/>
+    <tr>
+        <td colspan="4">
+        <input type = "text" name="valor_numero" id="valor_numero">
+        </td>
+    </tr>
+    <tr>
+        <td>
+    		<input type="Button" name="limpiar" value="C" onclick="borrarC()"/>
+        </td>
+ 
+        <td> 
+            <input type= "button" name= "division" value="/" onclick="superCalculadora.valor_numero.value += '/'"/>
+        </td>
+
+        <td>
+            <input type ="button" name="multiplicar" value="*" onclick="superCalculadora.valor_numero.value += '*'">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="button" name="siete" value="7" onclick="superCalculadora.valor_numero.value += '7'">
+        </td>
+
+        <td>
+            <input type= "button" name="ocho" value="8" onclick="superCalculadora.valor_numero.value += '8'">
+        </td>  
+
+         <td>
+            <input type= "button" name="nueve" value="9" onclick="superCalculadora.valor_numero.value += '9'">
+        </td> 
+
+          <td>
+            <input type= "button" name="resta" value="-"/ onclick="superCalculadora.valor_numero.value += '-'">
+        </td> 
+    </tr>
+
+    <tr>
+         <td>
+            <input type= "button" name="four" value="4" onclick="superCalculadora.valor_numero.value += '4'">
+        </td> 
+
+         <td>
+            <input type= "button" name="five" value="5" onclick="superCalculadora.valor_numero.value += '5'">
+        </td> 
+
+         <td>
+            <input type= "button" name="six" value="6" onclick="superCalculadora.valor_numero.value += '6'">
+        </td>
+
+        <td>
+           <input type = "button" name="sumar" value="+" onclick="superCalculadora.valor_numero.value += '+'"/>
+        </td>    
+        
+    </tr>
+
+        <td> 
+           <input type= "button" name="one" value="1" onclick="superCalculadora.valor_numero.value += '1'">
+        </td>
+
+         <td>
+            <input type= "button" name="two" value="2" onclick="superCalculadora.valor_numero.value += '2'">
+        </td> 
+
+         <td>
+            <input  type= "button" name="three" value="3" onclick="superCalculadora.valor_numero.value += '3'">
+        </td> 
+
+        <td>    
+           <input type="Button" name="igual" value="=" onclick="resultado()">
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+           <input type="Button" name="zero" value="0" onclick="superCalculadora.valor_numero.value += '0'">
+        </td>
+    </tr>
+    </table>
+    </form>
+    <script type= "text/javascript" src = "Js/operaciones_calculadora.js"></script>
+</body>
+</html>
+
